@@ -17,7 +17,15 @@ class ItemClass: NSObject {
         itemName = inpItemName
         itemTime = inpItemTime
         itemPurchased = inpItemPurchased
-        
+    }
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.itemName, forKey: "itemName")
+        aCoder.encode(Convert.timeToString(inp: self.itemTime),forKey: "itemTime")
+        aCoder.encode(Convert.boolToString(inp: self.itemPurchased), forKey: "itemPurchased")
+    }
+    
+    required convenience override init() {
+        <#code#>
     }
     
 }

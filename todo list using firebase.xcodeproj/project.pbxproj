@@ -18,6 +18,7 @@
 		445DD1AA271C871300B700FD /* GroceryListClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445DD1A9271C871300B700FD /* GroceryListClass.swift */; };
 		445DD1AD271C88FD00B700FD /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445DD1AC271C88FD00B700FD /* AppData.swift */; };
 		445DD1B0271C8C5400B700FD /* PrepareFirstLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445DD1AF271C8C5400B700FD /* PrepareFirstLists.swift */; };
+		4497D44B27228AB100F04415 /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497D44A27228AB000F04415 /* Convert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		445DD1A9271C871300B700FD /* GroceryListClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListClass.swift; sourceTree = "<group>"; };
 		445DD1AC271C88FD00B700FD /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		445DD1AF271C8C5400B700FD /* PrepareFirstLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareFirstLists.swift; sourceTree = "<group>"; };
+		4497D44A27228AB000F04415 /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +73,9 @@
 				445DD18F271C32A700B700FD /* Main.storyboard */,
 				445DD19F271C3ACA00B700FD /* ListsViewController.swift */,
 				445DD1A3271C645B00B700FD /* ItemClass.swift */,
-				445DD1A6271C663800B700FD /* UserClass.swift */,
 				445DD1A9271C871300B700FD /* GroceryListClass.swift */,
+				445DD1A6271C663800B700FD /* UserClass.swift */,
+				4497D44A27228AB000F04415 /* Convert.swift */,
 				445DD1AC271C88FD00B700FD /* AppData.swift */,
 				445DD1AF271C8C5400B700FD /* PrepareFirstLists.swift */,
 				445DD192271C32B100B700FD /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				445DD1B0271C8C5400B700FD /* PrepareFirstLists.swift in Sources */,
+				4497D44B27228AB100F04415 /* Convert.swift in Sources */,
 				445DD1A7271C663800B700FD /* UserClass.swift in Sources */,
 				445DD18A271C32A700B700FD /* AppDelegate.swift in Sources */,
 				445DD1A0271C3ACA00B700FD /* ListsViewController.swift in Sources */,

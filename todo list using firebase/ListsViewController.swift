@@ -42,10 +42,31 @@ class ListsViewController: UIViewController ,UITableViewDelegate,UITableViewData
     }
     
     @IBAction func newListAction(_ sender: Any) {
+        let alert : UIAlertController = UIAlertController(title: "New List", message: "Please Enter The Name Of The New List", preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "new list"
+            textField.font = UIFont.systemFont(ofSize: 22)
+            textField.textAlignment = NSTextAlignment.center
+        }
+        alert.addAction(UIAlertAction(title: "Save", style: UIAlertAction.Style.default , handler: { (myAlert) in
+            self.newListSave(inpName: alert.textFields![0].text!)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel , handler: nil ))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func profileAction(_ sender: Any) {
     }
+    
+    func newListSave (inpName: String)
+    {
+        let newList = GroceryListClass(inpListName: inpName, inpOwner: AppData.sharedInstance.curUser!, inpListItems: [])
+        AppData.sharedInstance.currentLST.append(newList)
+        listsTableView.reloadData()
+    }
+    
     
     
 
