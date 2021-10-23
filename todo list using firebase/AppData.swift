@@ -13,6 +13,9 @@ class AppData: NSObject {
     var curUser : UserClass?
     var currentLST: Array <GroceryListClass>!
     
+    var offlineLST: Array<GroceryListClass>!
+    
+    
     public override init()
     {
         currentLST = Array<GroceryListClass> ()

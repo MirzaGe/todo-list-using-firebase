@@ -24,8 +24,14 @@ class ItemClass: NSObject {
         aCoder.encode(Convert.boolToString(inp: self.itemPurchased), forKey: "itemPurchased")
     }
     
-    required convenience override init() {
-        <#code#>
+    required convenience init?(coder aDecoder: NSCoder) {
+        let thisName = aDecoder.decodeObject(forKey: "itemName") as! String
+        let thisTime = aDecoder.decodeObject(forKey: "itemTime") as! String
+        let thisPurchased = aDecoder.decodeObject(forKey: "itemPurchased") as! String
+        
+        self.init(inpItemName: thisName,
+                  inpItemTime: Convert.stringToTime(inp: thisTime),
+                  inpItemPurchased:Convert.stringToBool(inp: thisPurchased))
     }
     
 }
